@@ -9,7 +9,6 @@ D:.
 ?   next.config.ts
 ?   package-lock.json
 ?   package.json
-?   postcss.config.js
 ?   postcss.config.mjs
 ?   README.md
 ?   tailwind.config.js
