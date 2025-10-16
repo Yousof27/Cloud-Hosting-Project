@@ -1,6 +1,6 @@
-export default module = {
+module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
   },
-};
+}
