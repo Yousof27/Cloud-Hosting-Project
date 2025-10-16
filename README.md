@@ -23,6 +23,10 @@ This is a full-stack web application built with Next.js, featuring a cloud hosti
 - **Schema Validation**: [Zod](https://zod.dev/)
 - **Authentication**: JSON Web Tokens (JWT)
 
+## Live Demo
+
+Visit the deployed application at [https://cloudhosting01.netlify.app](https://cloudhosting01.netlify.app).
+
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
@@ -36,12 +40,14 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Installation
 
 1.  **Clone the repository:**
+
     ```bash
-    git clone https://github.com/your-username/cloud-hosting-project.git
+    git clone https://github.com/Yousof27/Cloud-Hosting-Project.git
     cd cloud-hosting-project
     ```
 
 2.  **Install dependencies:**
+
     ```bash
     npm install
     # or
@@ -50,6 +56,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 3.  **Set up environment variables:**
     Create a `.env` file in the root of the project and add the following variables:
+
     ```env
     DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE"
     JWT_SECRET="your_super_secret_jwt_key"
@@ -57,6 +64,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 4.  **Apply database migrations:**
     Run the following command to sync your database schema with the Prisma schema.
+
     ```bash
     npx prisma migrate dev
     ```
@@ -74,6 +82,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 The application exposes the following RESTful API endpoints:
 
 ### User API
+
 - `POST /api/user/register`: Register a new user.
 - `POST /api/user/login`: Log in a user.
 - `GET /api/user/logout`: Log out a user.
@@ -82,6 +91,7 @@ The application exposes the following RESTful API endpoints:
 - `DELETE /api/user/profile/:id`: Delete user profile.
 
 ### Articles API
+
 - `GET /api/articles`: Get articles with pagination.
 - `POST /api/articles`: Create a new article (admin only).
 - `GET /api/articles/search`: Search for articles.
@@ -91,6 +101,7 @@ The application exposes the following RESTful API endpoints:
 - `DELETE /api/articles/:id`: Delete an article (admin only).
 
 ### Comments API
+
 - `GET /api/comments`: Get all comments (admin only).
 - `POST /api/comments`: Create a new comment.
 - `PUT /api/comments/:id`: Update a comment.
@@ -117,4 +128,4 @@ The project follows the standard Next.js `app` directory structure.
 
 ## Deployment
 
-The application is ready to be deployed on platforms like [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/). Ensure that you have set up the environment variables in your deployment provider's settings.
+The application is ready to be deployed on platforms [Netlify](https://www.netlify.com/). Ensure that you have set up the environment variables in your deployment provider's settings.
